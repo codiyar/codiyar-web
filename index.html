@@ -16,14 +16,70 @@
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
-        <div class="container">
-            <h1 class="title is-3 has-text-centered p-4">
-                کدیار، پلتفرم طراحی سایت و آموزش برنامه نویسی
-            </h1>
+        <header class="header-section">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img
+                            src="https://bulma.io/images/bulma-logo.png"
+                            width="112"
+                            height="28"
+                        />
+                    </a>
 
+                    <a
+                        role="button"
+                        class="navbar-burger"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="navbarBasicExample"
+                    >
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item">صفحه اصلی</a>
+                        <a class="navbar-item">دوره های آموزشی</a>
+                        <a class="navbar-item">مقاله های آموزشی</a>
+                        <a class="navbar-item">درباره ما</a>
+                        <a class="navbar-item">ارتباط با ما</a>
+                    </div>
+
+                    <div class="navbar-start">
+                        <div class="navbar-item dir-ltr">
+                            <div class="buttons">
+                                <a class="button is-light"
+                                    >ورود به پنل کاربری</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <h1 class="title is-3 has-text-centered">
+                کدیار، پلتفرم آموزش برنامه نویسی
+            </h1>
+            <h2 class="subtitle is-6 has-text-centered p-0">
+                بدون دغدغه و به راحتی برنامه نویس شو!
+            </h2>
+
+            <form class="search">
+                <input type="text" />
+                <button type="submit">
+                    <i class="fab fa-instagram"></i>
+                </button>
+            </form>
+        </header>
+
+        <div class="container">
             <div class="columns is-flex-wrap-wrap">
                 <div
                     class="
