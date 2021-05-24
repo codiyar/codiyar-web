@@ -28,4 +28,10 @@
     border-radius: 5px;
     color: $white-color;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.titlebar span {
+    margin-left: 5px;
 }
