@@ -1,0 +1,31 @@
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.titlebar h3 {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.titlebar h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    right: 8px;
+    bottom: 4px;
+    background-color: $primary-color;
+    opacity: 0.3;
+}
+
+.titlebar a {
+    background-color: $primary-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: $white-color;
+    font-size: 14px;
+}
