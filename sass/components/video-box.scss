@@ -1,0 +1,66 @@
+.video-box {
+    background-color: $white-color;
+    border-radius: 5px;
+    box-shadow: 0 0 19px rgb(168 172 185 / 30%);
+    display: flex;
+    flex-direction: column;
+
+    & img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    & h2 {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 7px 10px;
+    }
+
+    & .video-box_teacher {
+        padding: 0 10px;
+        color: $grey-color;
+
+        & a {
+            color: $grey-color;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $primary-color;
+            }
+        }
+    }
+
+    & .video-box_details {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        & .video-box_students {
+            font-size: 18px;
+            color: $grey-color;
+        }
+
+        & .video-box_price {
+            font-size: 24px;
+            color: $green-color;
+
+            & .video-box_price_discounted-price {
+                display: none;
+            }
+
+            &.off > .video-box_price_original-price {
+                font-size: 17px;
+                color: $grey-color;
+                text-decoration: line-through;
+                margin-left: 5px;
+            }
+
+            &.off > .video-box_price_discounted-price {
+                display: block;
+            }
+        }
+    }
+}

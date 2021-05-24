@@ -2,7 +2,21 @@
 @import "colors";
 @import "components/_all";
 
+* {
+    font-family: Vazir;
+}
+
 body {
     direction: rtl;
     font-size: 14px;
+}
+
+a {
+    color: $black-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $primary-color;
+    }
 }
