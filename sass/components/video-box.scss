@@ -46,6 +46,7 @@
         & .video-box_price {
             font-size: 24px;
             color: $green-color;
+            display: flex;
 
             & .video-box_price_discounted-price {
                 display: none;
